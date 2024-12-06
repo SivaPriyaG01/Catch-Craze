@@ -6,20 +6,38 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] fallingObjects;
     public float xSpawnRange;
     public float ySpawnPos;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool isSpawning = false; // Track if spawning is already started
+
     void Start()
     {
-        gameManager=GameObject.Find("GameManager").GetComponent<GameManager>();
-        if(gameManager.gameOver==true)
-        {
-            InvokeRepeating("SpawnRandomObjects",2,Random.Range(1,2));
-        }   
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // Check if gameStart is true and spawning hasn't started
+        if (gameManager.gameStart == true && gameManager.gameOver == false && !isSpawning)
+        {
+            StartSpawning();
+        }
+
+        // Stop spawning if gameOver becomes true
+        if (gameManager.gameOver == true && isSpawning)
+        {
+            StopSpawning();
+        }
+    }
+
+    void StartSpawning()
+    {
+        isSpawning = true;
+        InvokeRepeating("SpawnRandomObjects", 1, Random.Range(1, 2)); // Start spawning objects
+    }
+
+    void StopSpawning()
+    {
+        isSpawning = false;
+        CancelInvoke("SpawnRandomObjects"); // Stop spawning objects
     }
     void SpawnRandomObjects()
     {
