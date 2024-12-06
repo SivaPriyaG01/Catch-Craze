@@ -15,9 +15,16 @@ public class FallDown : MonoBehaviour
     void Update()
     {
         rb.AddForce(Vector2.down*speed, ForceMode2D.Impulse);
-        if(transform.position.y< -8)
+        if(transform.position.y < -8)
         {
             Destroy(gameObject);
         }
+    }
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        if(other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }    
     }
 }

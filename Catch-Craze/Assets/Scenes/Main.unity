@@ -150,12 +150,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallingObjects:
   - {fileID: 6577775505993932974, guid: ae82ee2aa048f3248b794a5c3467eba9, type: 3}
-  - {fileID: 7325023215289205312, guid: 8499ae2d5a496cb4ab9041f586d2c516, type: 3}
-  - {fileID: 3315338679517291215, guid: 1ba68deb01d504f40a3838c517bfe3e0, type: 3}
-  - {fileID: 8720974865537316981, guid: 883cd164633c1924f9ff8f9b7b07648f, type: 3}
-  - {fileID: 3151223854959811511, guid: 31fda362f56126b4f8f5e8509dc1ad18, type: 3}
-  - {fileID: 6067683022546206368, guid: 76e4258068ee6a342a1c9f36352b6da7, type: 3}
-  xSpawnRange: 4
+  - {fileID: 247206281794628821, guid: 3277f84d70988f44dabb29a5f40784b0, type: 3}
+  - {fileID: 1916132046312038414, guid: a0d9cb18595f827488eee293149915bd, type: 3}
+  - {fileID: 7397457467675358737, guid: 060e227a8df77b3499a4b862a478709b, type: 3}
+  - {fileID: 439642261219020665, guid: 534ae180d4178104db3810c86efe8e14, type: 3}
+  - {fileID: 3737481541246957450, guid: 66db11f2a898f904fbe1302ec0c14c2e, type: 3}
+  xSpawnRange: 2
   ySpawnPos: 8
 --- !u!4 &217806568
 Transform:
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 954266058}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -821,7 +821,7 @@ Transform:
   m_GameObject: {fileID: 1480225348}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.58, z: 0}
+  m_LocalPosition: {x: 0, y: -2.726, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

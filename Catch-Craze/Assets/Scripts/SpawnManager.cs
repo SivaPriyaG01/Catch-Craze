@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpawnRandomObjects",2,Random.Range(1,3));
+        InvokeRepeating("SpawnRandomObjects",2,Random.Range(1,2));
     }
 
     // Update is called once per frame
