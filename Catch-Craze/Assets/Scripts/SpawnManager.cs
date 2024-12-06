@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    private GameManager gameManager;
     public GameObject[] fallingObjects;
     public float xSpawnRange;
     public float ySpawnPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("SpawnRandomObjects",2,Random.Range(1,2));
+        gameManager=GameObject.Find("GameManager").GetComponent<GameManager>();
+        if(gameManager.gameOver==true)
+        {
+            InvokeRepeating("SpawnRandomObjects",2,Random.Range(1,2));
+        }   
     }
 
     // Update is called once per frame
