@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386628814999",
+    "project_id": "catch-craze",
+    "storage_bucket": "catch-craze.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386628814999:android:4eef4e58875ea3eb1541d2",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.Catch_Craze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386628814999-d0dulp91ru6sol8ami1tvu9nn35m9vn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEdRFVK647i5T7ePDrFyvtliAklwyLEvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386628814999-d0dulp91ru6sol8ami1tvu9nn35m9vn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
